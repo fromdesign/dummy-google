@@ -1,0 +1,174 @@
+/*
+ - Reset css
+*/
+
+* {
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+ul, li {
+	list-style: none;
+}
+body {
+	font-size: 14px;
+	line-height: 21px;
+	color: #333;
+}
+a {
+	color: #333;
+	text-decoration: none;
+}
+input[type="submit"], button {
+	background-color: transparent;
+}
+
+/*
+ - Gnb
+*/
+
+.gnb{
+	padding: 15px 0;
+	margin-bottom: 150px;
+}
+.gnb ul {
+	text-align: right;
+	padding: 0 30px;
+	word-spacing: 10px;
+}
+.gnb ul li {
+	vertical-align: top;
+	display: inline-block;
+}
+.gnb ul li:not(.normal) a{
+	display: block;
+	text-indent: 99999em;
+	background-position: center center;
+	background-repeat: no-repeat;
+	overflow: hidden;
+}
+.gnb ul li.apps a {
+	width: 16px;
+	height: 21px;
+	background-size: 16px 16px;
+	background-image: url(../images/menu.png);
+}
+.gnb ul li.notice a {
+	width: 21px;
+	height: 21px;
+	background-size: 21px 21px;
+	background-image: url(../images/alarm.png);
+}
+.gnb ul li.account a {
+	display: block;
+	width: 30px;
+	height: 30px;
+	background-color: navy;
+	color: #fff;
+	line-height: 30px;
+	text-align: center;
+	font-size: 12px;
+	border-radius: 50%;
+	margin-top: -4.5px;
+}
+
+/*
+ - main
+*/
+
+main .logo {
+	text-align: center;
+	margin-bottom: 21px;
+}
+main form {
+	width: 1100px;
+	margin: 0 auto;
+}
+main form .input-wrap {
+	width: 500px;
+	margin: auto;
+	margin-bottom: 30px;
+	box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16), 0 0 0 1px rgba(0,0,0,0.08);
+	padding: 5px;
+}
+main form .input-wrap:after {
+	content: '';
+	display: block;
+	clear: both;
+}
+main form .input-wrap > * {
+	vertical-align: top;
+	display: block;
+	float: left;
+}
+main form .input-wrap input[type="text"] {
+	height: 34px;
+	line-height: 34px;
+	width: calc(100% - 80px);
+}
+main form .input-wrap button {
+	width: 40px;
+	text-align: center;
+}
+main form .input-wrap button.virtual-keyboard {
+	padding-top: 10px;
+}
+main form .input-wrap button.search-voice {
+	padding-top: 5px;
+}
+main form .input-wrap img {
+	max-height: 25px;
+}
+main form .button-wrap {
+	text-align: center;
+}
+main form .button-wrap li {
+	display: inline-block;
+	margin-right: 10px;
+}
+main form .button-wrap li input{
+	line-height: 35px;
+	font-weight: 500;
+	padding: 0 10px;
+	background-color: #ebebeb;
+	border: 1px solid transparent
+}
+main form .button-wrap li input:hover {
+	border: 1px solid #c6c6c6;
+	box-shadow: 0 1px 1px rgba(0,0,0,0.1);
+}
+
+/*
+ - footer
+*/
+footer {
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	min-width: 1100px;
+	line-height: 40px;
+}
+footer > ul > li {
+	background-color: #ebebeb;
+	border-top: 1px solid #c6c6c6;
+	padding: 0 20px;
+}
+footer ul .else:after {
+	content: '';
+	display: block;
+	clear: both;
+}
+footer ul .else .business {
+	float: left;
+}
+footer ul .else .business li, footer ul .else .privacy li{
+	display: inline-block;
+	margin-right: 15px;
+}
+footer ul .else .business li:last-child , footer ul .else .privacy li:last-child {
+	margin-right: 0;
+}
+footer ul .else .privacy {
+	float: right;
+}
